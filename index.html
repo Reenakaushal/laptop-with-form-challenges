@@ -6,11 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Laptop with Form</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <style>
+        
         .laptop {
-            width: 800px;
-            height: 500px;
-            background: #333;
+            width: 1200px;
+            height: 900px;
+            background: #242222;
             border-radius: 15px;
             position: relative;
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
@@ -30,8 +32,8 @@
         }
 
         .screen {
-            width: 760px;
-            height: 420px;
+            width: 1160px;
+            height: 820px;
             background: #fff;
             margin: 20px auto;
             border-radius: 10px;
@@ -50,10 +52,18 @@
         .form {
             width: 100%;
             max-width: 360px;
-            background: #f9f9f9;
+            color: black;
+            background: #b5b4b4;
             padding: 20px;
             border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            box-shadow: 10 15px 25px;
+        }
+        .icon{
+            
+            gap: 50px;
+            color: white;
+            padding: 5px;
+            margin: 10px;
         }
     </style>
 </head>
@@ -64,11 +74,16 @@
         <div class="screen">
             <div class="form-container">
                 <form class="form">
-                    <h2 class="text-2xl font-bold mb-6 text-gray-800">Contact Us</h2>
+                    <h2 class="text-2xl font-bold mb-6 text-gray-800">Apply Here...</h2>
                     <div class="mb-4">
                         <label for="name" class="block text-gray-700">Name</label>
                         <input type="text" id="name" class="mt-1 p-2 w-full border border-gray-300 rounded-md"
                             placeholder="Your name">
+                    </div>
+                    <div class="mb-4">
+                        <label for="Father Name" class="block text-gray-700">Father Name</label>
+                        <input type="Father Name" id="Father Name" class="mt-1 p-2 w-full border border-gray-300 rounded-md"
+                            placeholder="Your Father Name">
                     </div>
                     <div class="mb-4">
                         <label for="email" class="block text-gray-700">Email</label>
@@ -76,15 +91,37 @@
                             placeholder="Your email">
                     </div>
                     <div class="mb-4">
-                        <label for="message" class="block text-gray-700">Message</label>
-                        <textarea id="message" class="mt-1 p-2 w-full border border-gray-300 rounded-md"
-                            placeholder="Your message" rows="4"></textarea>
+                        <label for="District" class="block text-gray-700">District</label>
+                        <input type="email" id="email" class="mt-1 p-2 w-full border border-gray-300 rounded-md"
+                            placeholder="Your email">
                     </div>
+                    <div class="mb-4">
+                        <label for="contact Number" class="block text-gray-700">contact Number</label>
+                        <input type="contact Number" id="contact Number" class="mt-1 p-2 w-full border border-gray-300 rounded-md"
+                            placeholder="Your contact Number">
+                    </div>
+                    <label for="browser">Choose your cources:</label>
+                    <input list="browsers" name="browser" id="browser">
+                    <datalist id="browsers">
+                      <option value="FULL STACK DEVELOPER">
+                      <option value="PYTHON">
+                      <option value="PHP">
+                      <option value="C++">
+                      <option value="JAVA">
+                    </datalist>
                     <button type="submit"
                         class="bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600">Submit</button>
                 </form>
             </div>
         </div>
+        <div style="" class="icon ">
+            <i class="fa-brands fa-microsoft"></i>
+            <input style="border-radius: 6px; "  type="search here" ><i class="fa-solid fa-magnifying-glass"></i>
+            <i class="fa-regular fa-folder"></i>
+            <i class="fa-regular fa-file-excel"></i>
+            <i class="fa-regular fa-file-word"></i>
+        </div>
+     
     </div>
 
 </body>
