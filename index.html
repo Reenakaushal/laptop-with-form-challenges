@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laptop with Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .laptop {
+            width: 800px;
+            height: 500px;
+            background: #333;
+            border-radius: 15px;
+            position: relative;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            margin: 0 auto;
+        }
+
+        .laptop::before {
+            content: '';
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            width: 90%;
+            height: 20px;
+            background: #444;
+            border-radius: 0 0 10px 10px;
+            transform: translateX(-50%);
+        }
+
+        .screen {
+            width: 760px;
+            height: 420px;
+            background: #fff;
+            margin: 20px auto;
+            border-radius: 10px;
+            overflow: hidden;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .form-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+
+        .form {
+            width: 100%;
+            max-width: 360px;
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+
+    <div class="laptop">
+        <div class="screen">
+            <div class="form-container">
+                <form class="form">
+                    <h2 class="text-2xl font-bold mb-6 text-gray-800">Contact Us</h2>
+                    <div class="mb-4">
+                        <label for="name" class="block text-gray-700">Name</label>
+                        <input type="text" id="name" class="mt-1 p-2 w-full border border-gray-300 rounded-md"
+                            placeholder="Your name">
+                    </div>
+                    <div class="mb-4">
+                        <label for="email" class="block text-gray-700">Email</label>
+                        <input type="email" id="email" class="mt-1 p-2 w-full border border-gray-300 rounded-md"
+                            placeholder="Your email">
+                    </div>
+                    <div class="mb-4">
+                        <label for="message" class="block text-gray-700">Message</label>
+                        <textarea id="message" class="mt-1 p-2 w-full border border-gray-300 rounded-md"
+                            placeholder="Your message" rows="4"></textarea>
+                    </div>
+                    <button type="submit"
+                        class="bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
